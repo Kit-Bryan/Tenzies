@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1,p {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+body {
+    height: 100vh;
+    background-color: #0b2434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 88vw;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    font-family: Karla;
+    font-weight: 700;
+}
+
+main > p {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Dices section */
+.dices-div {
+    display: grid;
+    gap: 20px;
+    grid-template: auto auto/ repeat(5, 1fr);
+    padding: 10px;
+    justify-items: center;
+}
+
+.die-div {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    height: 43px;
+    width: 43px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 1.4rem;
+}
+
+/* Roll Button */
+
+.roll-btn {
+    background-color: #5035FF;
+    font-family: Karla;
+    font-weight: 700;
+    border: none;
+    color: white;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    padding: 14px 35px;
+    margin: 25px 0 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.roll-btn:focus {
+    outline: none;
+}
+
+.roll-btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
